@@ -13,7 +13,7 @@ CREATE TABLE students (
     password VARCHAR(50)
 );
 
--- Results table
+
 CREATE TABLE results (
     resultId INT AUTO_INCREMENT PRIMARY KEY,
     studentId INT,
@@ -22,7 +22,7 @@ CREATE TABLE results (
     FOREIGN KEY (studentId) REFERENCES students(id)
 );
 
--- Payments table
+
 CREATE TABLE payments (
     paymentId INT AUTO_INCREMENT PRIMARY KEY,
     studentId INT,
