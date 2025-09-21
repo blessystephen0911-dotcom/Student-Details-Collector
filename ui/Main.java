@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-// Profile Class
+
 class Profile {
     private String name;
     private int age;
@@ -29,7 +29,7 @@ class Profile {
     }
 }
 
-// Semester Class
+
 class Semester {
     private String[] subjects;
     private double semesterFee;
@@ -55,7 +55,7 @@ class Semester {
     }
 }
 
-// Result Class
+
 class Result extends Semester {
     private String[] subjectGrades;
 
@@ -81,7 +81,7 @@ class Result extends Semester {
         System.out.println("Overall Grade: " + pointToGrade(avg));
     }
 
-    // Helper methods to convert grades to points and back
+    
     private double gradeToPoint(String grade) {
         switch (grade.toUpperCase()) {
             case "A": return 4.0;
@@ -101,7 +101,7 @@ class Result extends Semester {
     }
 }
 
-// Edit Class
+
 class Edit extends Profile {
     private int mark;
     private String placement;
@@ -110,7 +110,7 @@ class Edit extends Profile {
         super(name, age, address, phone, studentClass, branch);
     }
 
-    // Method overloading
+    
     public void addDetails(String placement) {
         this.placement = placement;
         System.out.println("Placement details updated: " + placement);
