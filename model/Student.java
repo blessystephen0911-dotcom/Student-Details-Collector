@@ -2,7 +2,7 @@ package model;
 
 public class Student extends Profile {
     private int id;
-    private String password; // for login
+    private String password; 
 
     public Student(int id, String name, int age, String address, String phone, String className, String branch, String password) {
         super(name, age, address, phone, className, branch);
