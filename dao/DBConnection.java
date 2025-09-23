@@ -5,8 +5,8 @@ import java.sql.DriverManager;
 
 public class DBConnection {
     private static final String URL = "jdbc:mysql://localhost:3306/studentdb";
-    private static final String USER = "root";   // change if needed
-    private static final String PASSWORD = "";   // set your MySQL password
+    private static final String USER = "root";   
+    private static final String PASSWORD = "Blessy@0911";   
 
     public static Connection getConnection() {
         Connection conn = null;
